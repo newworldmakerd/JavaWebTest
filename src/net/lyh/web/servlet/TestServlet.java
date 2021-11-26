@@ -1,4 +1,4 @@
-package net.lyh.web;
+package net.lyh.web.servlet;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

@@ -1,4 +1,4 @@
-package net.lyh.web;
+package net.lyh.web.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;

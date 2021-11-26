@@ -1,4 +1,4 @@
-package net.lyh.web;
+package net.lyh.web.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,14 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/gene_cookie_test")
-public class GeneCookieServlet extends HttpServlet {
+@WebServlet("/cookie_test")
+public class CookieServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Cookie cookie=new Cookie("token","nihao");
-        //20秒过期时间，过期后不会自动携带过去
-        cookie.setMaxAge(20);
-        resp.addCookie(cookie);
-        req.getRequestDispatcher("/index.jsp").forward(req,resp);
+        Cookie[] cookies = req.getCookies();
+        for (int i=0;i<cookies.length;i++){
+            cookies[i].getDomain();
+        }
+
     }
 }
