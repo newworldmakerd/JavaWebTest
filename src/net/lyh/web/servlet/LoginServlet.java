@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
             user.setName(name);
             user.setHost("lyh.net");
             session.setAttribute("loginuser",user);
-            req.getRequestDispatcher("/WEB-INF/user.jsp").forward(req,resp);
+            req.getRequestDispatcher("/user/user.jsp").forward(req,resp);
         }
         else {
             req.setAttribute("msg","账号密码错误");

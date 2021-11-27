@@ -17,7 +17,8 @@
     密码<input type="password" name="pwd"/>
     <br>
     <input type="submit" value="登录">
-    消息记录${msg}
+    <br>
+    消息记录:${msg}
 </form>
 </body>
 </html>
