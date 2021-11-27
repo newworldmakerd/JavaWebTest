@@ -1,4 +1,4 @@
-package net.lyh.web;
+package net.lyh.web.domain;
 
 public class User {
     private int id;

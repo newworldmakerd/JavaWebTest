@@ -1,6 +1,6 @@
 package net.lyh.web.servlet;
 
-import net.lyh.web.User;
+import net.lyh.web.domain.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

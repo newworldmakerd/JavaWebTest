@@ -6,7 +6,7 @@
     
 <!--    <servlet>-->
 <!--        <servlet-name>userServlet</servlet-name>-->
-<!--        <servlet-class>net.lyh.web.UserServlet</servlet-class>-->
+<!--        <servlet-class>net.lyh.web.servlet.UserServlet</servlet-class>-->
 <!--    </servlet>-->
 <!--    <servlet-mapping>-->
 <!--        <servlet-name>userServlet</servlet-name>-->
@@ -15,5 +15,9 @@
     <context-param>
         <param-name>url</param-name>
         <param-value>lyh.net</param-value>
+    </context-param>
+    <context-param>
+        <param-name>topic</param-name>
+        <param-value>刘宇恒的论坛网站</param-value>
     </context-param>
 </web-app>
