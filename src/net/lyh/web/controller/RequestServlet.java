@@ -1,19 +1,16 @@
-package net.lyh.web.servlet;
+package net.lyh.web.controller;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet("/test")
-public class TestServlet extends HttpServlet {
+@WebServlet("/request")
+public class RequestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().write("lyh.net");
-        ServletContext servletContext = req.getServletContext();
-        String appInfo = (String) servletContext.getAttribute("appInfo");
-        System.out.println(appInfo);
+        System.out.println(req.getContextPath());
+
     }
 }

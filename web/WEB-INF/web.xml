@@ -6,7 +6,7 @@
     
 <!--    <servlet>-->
 <!--        <servlet-name>userServlet</servlet-name>-->
-<!--        <servlet-class>net.lyh.web.servlet.UserServlet</servlet-class>-->
+<!--        <servlet-class>net.lyh.web.controller.UserServlet</servlet-class>-->
 <!--    </servlet>-->
 <!--    <servlet-mapping>-->
 <!--        <servlet-name>userServlet</servlet-name>-->

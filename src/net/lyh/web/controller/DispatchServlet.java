@@ -1,4 +1,4 @@
-package net.lyh.web.servlet;
+package net.lyh.web.controller;
 
 import net.lyh.web.domain.Config;
 import net.lyh.web.domain.User;
